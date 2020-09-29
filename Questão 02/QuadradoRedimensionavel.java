@@ -30,4 +30,9 @@ public class QuadradoRedimensionavel extends Quadrado implements Redimencionavel
         return 4 * lado;
     }
     
+    @Override
+    public void redimensionar(int percentual) {
+        this.area += this.area * percentual / 100;
+    }
+    
 }
